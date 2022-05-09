@@ -11,13 +11,7 @@ export function renderListItem(animal) {
     nameSpan.textContent = animal.name;
     nameSpan.classList.add('name');
 
-    const li = document.createElement('li')
-    const a = document.createElement('a'),
-
-    a.href = `./data/?id=${animals.id}`,
-    a.textContent = animals.name,
-    li.append(a),
-    return li;
+    
 
 
     const span = document.createElement('span');
