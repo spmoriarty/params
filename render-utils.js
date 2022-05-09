@@ -11,8 +11,6 @@ export function renderListItem(animal) {
     nameSpan.textContent = animal.name;
     nameSpan.classList.add('name');
 
-    
-
 
     const span = document.createElement('span');
     span.textContent = animal.says;
