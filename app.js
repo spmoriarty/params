@@ -3,6 +3,7 @@ import { renderListItem } from './render-utils.js';
 import { findById } from './utils.js';
 
 const main = document.querySelector('main');
+const farmLinks = document.getElementById('link');
 
 for (let animal of animals) {
     const animalDiv = renderListItem(animal);
@@ -10,6 +11,3 @@ for (let animal of animals) {
 }
 
 
-
-
-for (let )
