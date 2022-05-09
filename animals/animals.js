@@ -1,11 +1,11 @@
-import { findById } from '../utils';
-import { animals } from '../data';
+import { findById } from '../utils.js';
+import { animals } from '../data.js';
 
 
 const params = new URLSearchParams(window.location.search);
 const animal = findById(params.get('id'), animals);
 
-const main = document.getElementById('animal-info');
+const main = document.getElementById('animal-name');
 const img = document.getElementById('img');
 const quote = document.getElementById('quote');
 
@@ -23,8 +23,3 @@ img.src = `../assets/${animal.type}.svg`;
 // a.href = `../data/?id=${animals.id}`;
 // a.textContent = animals.name;
 // li.append(a);
-
-for (let animal of animals) {
-    const animalDiv = renderListItem(animal.id);
-    main.append(animalDiv);
-}
